@@ -239,18 +239,29 @@ var Buscar= function(){
 };
 
 var usuario = function(){
-  this.Name = "";
-  this.Mail = "";
-  this.Password = "";
+  this.Name = "Cristianc";
+  this.Mail = "carvage";
+  this.PassWord = "123";
   this.State = "E";
-
+  this.SoapMessage = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'
+  +'<soap:Body>'
+  +'<Register xmlns="http://reservapp.azurewebsites.net/">'
+  +'<pName>'+ this.Name+'</pName>'
+   +'<pMail>'+this.Mail+'</pMail>'
+    +'<pPassWord>'+ this.PassWord+'</pPassWord>'
+     +'<pState>'+this.State+'</pState>'
+    +'</Register>'
+  +'</soap:Body>'
++'</soap:Envelope>'
+  
   this.Register = function(){
     $.ajax({
-      dataType: "xml", 
-      contentType: "text/xml",
-      type: "POST",
       url: "http://reservapp.azurewebsites.net/reservapp.asmx?op=Register",
-      data: { pName: "John", pMail: "carvagereal@HOT.com", pPassWord: "1234", pState: "E" }
+      type: "POST",
+      dataType: "xml", 
+      data: this.SoapMessage,
+      processData: true,
+      contentType: "application/soap+xml; charset=utf-8"
     })
     .done(function(msg) {
       alert( "Data Saved: " + msg );
