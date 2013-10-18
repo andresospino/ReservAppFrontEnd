@@ -168,7 +168,7 @@ var Restaurant = function(){
    var Restaurant = $('<li></li>');
    $.each(pArray, function(R,r){    
     var RestaurantS = $('<section></section>');
-    var RestaurantA = $('<article style="width:100%"></article>');
+    var RestaurantA = $('<article style="width:85%"></article>');
     RestaurantA.appendTo(RestaurantS);
     RestaurantS.appendTo(Restaurant);
     var Description = $('<div id="Div'+R+'" class="'+pClass+'" style="height: 168px; opacity: 1; width: 100%; left: 138px; overflow: hidden;"><div  class="expl-portrait-content" style="opacity: 1; margin-top: 22.5px; width: 100%;"><h2 class="name">'+r.nombre.substring(0,20)+'</h2><h4 class="sous-name">• '+r.tipoComida+' •</h4><p class="expl">'+r.descripcion.substring(0,40)+'</p></div></div>');
