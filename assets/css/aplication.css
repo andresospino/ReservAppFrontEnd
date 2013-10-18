@@ -1,0 +1,1048 @@
+/*Colore
+Rojo: #d82126
+Verde:#78AD60 
+Gris: #E9E9F1
+Naranja: #FFAD33
+Morado: #832D63*/
+
+#root { max-width: 100%; margin: 0; }
+
+
+body{
+    font-size:16px;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font-family: 'BebasNeueRegular';
+    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+ul, li, menu, p , div {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    -o-margin-before: 0em;
+    -o-margin-after: 0em;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-start: 0px;
+    -ms-margin-before: 0em;
+    -ms-margin-after: 0em;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-start: 0px;
+    -moz-margin-before: 0em;
+    -moz-margin-after: 0em;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-start: 0px;
+}
+
+    a
+    {
+        text-decoration:none;
+        color:#d82126;
+    }
+    nav{
+        overflow: hidden;
+        background-color:#3F4944;
+        float: left;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+    nav ul{
+        display: inline;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0.5em;
+    }
+
+    section ul{
+        display: inline;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    section ul li {
+        display: inline;
+        padding: 0.5em;
+    }
+   
+    section
+    {
+        width:100%;
+        margin-top:2%;
+        margin-left:8%;
+    }
+
+    article
+    {
+        padding-right:50px;
+        padding-top: 10%;   
+        float:left;
+    }
+
+
+    object
+    {
+      width:100%;
+      height: 100%;
+  }
+  .HeaderHome
+  {
+    height:450px;
+    width:100%;
+    padding-top:10px;
+    background-image:url(http://reservapp.azurewebsites.net/assets/img/reservapp.jpg) ;
+    border-bottom: 3px solid  #d82126;  
+}
+
+
+.HeaderRestaurant
+{
+    height:450px;
+    width:100%;
+    padding-top:60px;
+    border-bottom: 3px solid  #d82126;  
+    top:20px;
+}
+
+/*Cambiar el color del app*/
+#Search, #ui-id-1
+{
+    padding:10px;
+    width:50%;
+    border-radius:5px;
+    border-color:#d82126;
+    margin-left:25%;
+}
+
+#BtnSearch
+{
+   margin-left: -4%;   
+   position: absolute;
+   width:25px;
+   height:25px;
+}
+/*Objetos*/
+.TextBox{
+    padding:10px;
+    border-radius:5px;
+    border-color:#d82126;
+}
+
+.Botones
+{
+    padding:0.5em;
+    margin:3px;	
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:0.7em;
+    border-color:#d82126;
+}
+
+.Links
+{
+    padding:0.5em;
+    margin:3px; 
+    color:#fff;
+    font-size:1em;
+    border:none;
+}
+.Links:hover
+{
+    color:#d82126;
+}
+
+li .Links, li .ImgRedes{
+    float: right;
+    text-align: center;
+}
+/*Este no cambia color*/
+.BotonTransparente  {
+    color:#636365;
+    border:none;
+    border-color: transparent;
+    background-color:transparent;
+}
+
+.Logo
+{
+    padding: 0px;
+    margin: 0px;
+    height: 60px;     
+    float:left;
+}
+
+.Reservapp
+{
+    font-family:"Forte";
+    color:#d82126;
+}
+
+.TitleArticle
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Forte";
+    border:none;
+    color:#d82126;
+    padding: 0px;
+    margin-left: 1em;
+}
+
+.TitleArticle:first-letter{
+    font-size: 3em;
+
+}
+/*hasta aqui*/
+
+
+/*Columnas Restaurantes*/
+.Article3
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.ImageRestaurant{
+    width:100%;
+    height:168px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #DDD;
+}
+
+/*Cuadro descripcion restaurante*/
+.Puntos{
+  color: #DDD;
+}
+
+.Nombre{
+    font-family: 'UniversLTStd47LightCondensed';
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #999;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.Direccion
+{
+    font-size: 14px;
+    color: #BBB;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.DataOrange{
+    background: #FFAD33;
+}
+.DataRed{
+    background: #d82126 ;
+}
+.DataGreen{
+    background: #78AD60;
+}
+
+.expl-portrait-content{
+    text-align: center;
+    margin: auto;
+    border-top: 1px solid #FFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #FFF;
+}
+h2{
+
+    font-size: 35px;
+    font-family: 'BebasNeueRegular';
+    color: #FFF;
+    text-shadow: none;
+    line-height: 25px;
+    font-weight: lighter;
+}
+
+h4{
+    font-size: 14px;
+    font-family: 'UniversLTStd47LightCondensed';
+    letter-spacing: 2px;
+    color: #FFF;
+    margin-top: 10px;
+
+}
+
+.expl{
+    font-size: 12px;
+    font-family: 'UbuntuLight';
+    color: #FFF;
+    line-height: 18px;
+    margin-top: 5%;
+}
+
+/*Pie*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color:#3F4944;
+}
+footer ul{
+    position: relative;
+    /*width: 968px;
+    height: 60px;*/
+    margin: 0 auto;
+    z-index: 100;
+}
+
+footer ul li {
+    float: left;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+}
+footer ul  li a{
+    color: #DDD;    
+}
+
+.copyright{
+    font: 9px "FrutigerLTStd55Roman",sans-serif;
+    color: #DDD;
+    line-height: 12px;
+    padding-top: 17px;
+    text-align: left;
+}
+
+.ImgRedes
+{
+    padding:1%;
+    width:30px;
+    height:30px;
+    border:none;
+}
+
+.ImgArticle
+{
+    padding:0;
+    width:50px;
+    height:50px;
+    border:none;
+}
+.contact{
+    position:fixed;
+    z-index: 10;
+    width: 35px;
+    top:10%;
+    right: -5px;
+    background-color:#3F4944;
+    padding:5px;
+}
+
+.contact ul{
+    text-align: center;
+    border-top: 1px solid #FFF;
+    padding: 5px;
+    border-bottom: 1px solid #FFF;
+}
+
+/*Textos*/
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1.2em;
+    
+}
+
+.TextoMuyGrande{
+    color:#FFF;
+    font-size:3em;
+    padding: 0px;
+    margin: 0px;
+    padding-left:30%;
+    padding-top: 10%;
+
+} 
+
+.TextoGrande{
+    color:#636365;
+    font-size:1.5em;
+}
+
+.TextoNormal{
+    color:#000;
+    font-size:1em;
+}
+
+.TextoNormalBlanco{
+    color:#fff;
+    font-size:1em;
+    background-color:#3F4944;
+}
+.TextoPequeno{
+    color:#636365;
+    font-size:0.8em;
+}
+
+.hide{
+    /* display:none*/
+    opacity: 0.1;
+
+}
+.hides{
+   display:none
+
+
+}
+.show
+{
+    width:100%;
+    margin-top:-230px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #DDD;
+}
+
+/*--------------------------------------------+-
+----RESTAURANTE
+*/
+html, body, #map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+    .TitleArticle
+    {
+        font-size: 1.5em;
+    }
+    .TitleArticle:first-letter
+    {
+     font-size: 2.5em;   
+
+ }
+ .Article3
+ {
+    padding:0px;
+    width:30%;
+    float:left;
+}
+.TextoMuyGrande{
+    color:#FFF;
+    font-size:2.2em;
+    padding: 0px;
+    margin: 0px;
+    padding-left:30%;
+    padding-top: 10%;
+
+}
+}
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 1024px) and (orientation: portrait) {
+    .TitleArticle
+    {
+        font-size: 1.5em;
+
+    }
+    .TitleArticle:first-letter
+    {
+     font-size: 2.5em;   
+
+ }
+ .Article3
+ {
+    padding:0px;
+    width:30%;
+    float:left;
+}
+
+.TextoMuyGrande{
+    color:#FFF;
+    font-size:2em;
+    padding: 0px;
+    margin: 0px;
+    padding-left:30%;
+    padding-top: 10%;
+
+}
+
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+  .HeaderHome
+  {
+    height:300px;
+}
+.Logo
+{
+    padding: 0px;
+    margin: 0px;
+    height: 30px;     
+    float:left;
+    border:none;
+}
+.TitleArticle
+{
+ padding: 0px;
+ margin: 0px;
+ font-size: 1.5em;  
+}
+.TitleArticle:first-letter
+{
+ font-size: 2.5em;   
+
+}
+.Article3
+{
+    padding:0px;
+    margin: 0px;
+    width:95%;
+    float:left;
+}
+#Search
+{
+    padding:10px;
+    width:80%;
+    border-radius:5px;
+    border-color:#fff;
+    margin-left:2%;
+    margin-top:5%;
+}
+
+#BtnSearch{
+    padding:10px;
+    width:10%;
+    background-color:transparent;
+    border-color:transparent;
+    margin-left:-15%;
+    margin-top:5%;
+}
+
+#SelectCity
+{
+    padding:10px;
+    margin-left:33%;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:1em;
+    border-color:#d82126;
+}
+.contact{
+    display:none;
+}
+
+.TextoMuyGrande{
+    color:#fff;
+    font-size:1.5em;
+    margin: 1%;
+    padding-left:10px;
+    margin-top: 5%;
+}
+.TextoNormal{
+    color:#636365;
+    font-size:0.9em;
+}
+
+.TextoPequeno{
+    color:#636365;
+    font-size:0.6em;
+}
+
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1em;
+
+}
+.Links
+{
+    padding:0.2em;
+    margin:0px; 
+    color:#fff;
+    font-size:1em;
+    border:none;
+}
+.copyright
+{
+ display:none;
+}
+section
+{
+ width:95%; 
+ margin:2% 0 0 0;
+}
+
+.ImgRedes
+{
+
+ display: none;
+}
+
+#Registro, #Ingreso{
+    width:200px;
+    height:200px;
+}
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+    #Registro, #Ingreso
+    {
+        width:200px;
+        height:200px;
+    }
+    .HeaderHome
+    {
+        height:300px;
+    }
+    .Logo
+    {
+        padding: 0px;
+        margin: 0px;
+        height: 30px;     
+        float:left;
+        border:none;
+    }
+
+    .TitleArticle
+    {
+        font-size: 1.5em;
+    }
+    .TitleArticle:first-letter
+    {
+     font-size: 2.5em;   
+
+ }
+ .Article3
+ {
+    padding:0px;
+    margin: 0px;
+    width:95%;
+    float:left;
+}
+#Search
+{
+    padding:10px;
+    width:80%;
+    border-radius:5px;
+    border-color:#fff;
+    margin-left:2%;
+    margin-top:5%;
+}
+
+#BtnSearch{
+    padding:10px;
+    width:10%;
+    background-color:transparent;
+    border-color:transparent;
+    margin-left:-15%;
+    margin-top:4%;
+}
+
+#SelectCity
+{
+    padding:10px;
+    margin-left:25%;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:1em;
+    border-color:#d82126;
+}
+.contact{
+    display:none;
+}
+.TextoMuyGrande{
+    color:#fff;
+    font-size:1.5em;
+    margin: 1%;
+    padding-left:10px;
+    margin-top: 5%;
+}
+.TextoNormal{
+    color:#636365;
+    font-size:0.9em;
+}
+
+.TextoPequeno{
+    color:#636365;
+    font-size:0.6em;
+}
+
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1em;
+
+}
+.Links
+{
+    padding:0.2em;
+    margin:0px; 
+    color:#fff;
+    font-size:1em;
+    border:none;
+}
+
+.copyright
+{
+  display:none;
+}
+section
+{
+ width:95%; 
+ margin:2% 0 0 0;
+}
+.ImgRedes
+{
+    display: none;
+}
+}
+
+/* iPhone 5 Landscape */
+@media only screen and (width: px) and (width: 568px) and (orientation: landscape) {
+
+   .Logo
+   {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;     
+    float:left;
+    border:none;
+}
+.TitleArticle
+{
+ padding: 0px;
+ margin: 0px;
+ font-size: 1.5em;   
+}
+.TitleArticle:first-letter
+{
+ font-size: 2.5em;   
+
+}
+
+.Article3
+{
+    padding:0px;
+    margin: 0px;
+    width:98%;
+    float:left;
+}
+#Search
+{
+    padding:10px;
+    width:80%;
+    border-radius:5px;
+    border-color:#fff;
+    margin-left:2%;
+    margin-top:5%;
+}
+
+#BtnSearch{
+    padding:10px;
+    width:10%;
+    background-color:transparent;
+    border-color:transparent;
+    margin-left:-15%;
+    margin-top:5%;
+}
+
+#SelectCity
+{
+    padding:10px;
+    margin-left:33%;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:1em;
+    border-color:#d82126;
+}
+.contact{
+    display:none;
+}
+
+.TextoMuyGrande{
+    color:#fff;
+    font-size:1.5em;
+}
+.TextoNormal{
+    color:#636365;
+    font-size:0.9em;
+}
+
+.TextoPequeno{
+    color:#636365;
+    font-size:0.6em;
+}
+
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1em;
+
+}
+.Botones
+{
+    padding:5px;
+    margin:2px;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:0.5em;
+    border-color:#d82126;
+}
+.copyright
+{
+    font: 5px "FrutigerLTStd55Roman",sans-serif;
+    color: #DDD;
+    line-height: 10px;
+    padding-top: 10px;
+    text-align: left;
+    float: left;
+}
+}
+
+/* iPhone 5 Portrait */
+@media only screen and (width: px) and (width: 568px) and (orientation: portrait) {
+   .Logo
+   {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;     
+    float:left;
+    border:none;
+}
+
+.TitleArticle
+{
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+}
+.TitleArticle:first-letter
+{
+ font-size: 2.5em;   
+
+}
+.Article3
+{
+    padding:0px;
+    margin: 0px;
+    width:100%;
+    float:left;
+}
+#Search
+{
+    padding:10px;
+    width:80%;
+    border-radius:5px;
+    border-color:#fff;
+    margin-left:2%;
+    margin-top:5%;
+}
+
+#BtnSearch{
+    padding:10px;
+    width:10%;
+    background-color:transparent;
+    border-color:transparent;
+    margin-left:-15%;
+    margin-top:4%;
+}
+
+#SelectCity
+{
+    padding:10px;
+    margin-left:25%;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:1em;
+    border-color:#d82126;
+}
+.contact{
+    display:none;
+}
+.TextoMuyGrande{
+    color:#fff;
+    font-size:1.5em;
+    margin: 2%;
+    padding-left:10px;
+    margin-top: 30%;
+}
+.TextoNormal{
+    color:#636365;
+    font-size:0.9em;
+}
+
+.TextoPequeno{
+    color:#636365;
+    font-size:0.6em;
+}
+
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1em;
+
+}
+.Botones
+{
+    padding:5px;
+    margin:2px;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:0.5em;
+    border-color:#d82126;
+}
+
+.copyright
+{
+    font: 5px "FrutigerLTStd55Roman",sans-serif;
+    color: #DDD;
+    line-height: 10px;
+    padding-top: 10px;
+    text-align: left;
+    float: left;
+}
+}
+
+
+/* iPhone 2G-3GS Landscape */
+@media only screen and (width: 481px) and (width: 480px) and (orientation: landscape) {
+
+}
+
+/* iPhone 2G-3Gs Portrait */
+@media only screen and (width: 481px) and (width: 480px) and (orientation: portrait) {
+
+}
+
+/* iPhone 4/4S Landscape */
+@media only screen and (width: px) and (width: 480px) and (orientation: landscape) {
+
+}
+
+/* iPhone 4/4S Portrait */
+@media only screen and (width: px) and (width: 480px) and (orientation: portrait) {
+  .Logo
+  {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;     
+    float:left;
+    border:none;
+}
+
+.TitleArticle
+{
+    font-size: 1.5em;    
+    padding: 0px;
+    margin: 0px;
+}
+.TitleArticle:first-letter
+{
+ font-size: 2.5em;   
+
+}
+.Article3
+{
+    padding:0px;
+    margin: 0px;
+    width:100%;
+    float:left;
+}
+#Search
+{
+    padding:10px;
+    width:80%;
+    border-radius:5px;
+    border-color:#fff;
+    margin-left:2%;
+    margin-top:5%;
+}
+
+#BtnSearch{
+    padding:10px;
+    width:10%;
+    background-color:transparent;
+    border-color:transparent;
+    margin-left:-15%;
+    margin-top:4%;
+}
+
+#SelectCity
+{
+    padding:10px;
+    margin-left:25%;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:1em;
+    border-color:#d82126;
+}
+.contact{
+    display:none;
+}
+.TextoMuyGrande{
+    color:#fff;
+    font-size:1.5em;
+    margin: 2%;
+    padding-left:10px;
+    margin-top: 30%;
+}
+.TextoNormal{
+    color:#636365;
+    font-size:0.9em;
+}
+
+.TextoPequeno{
+    color:#636365;
+    font-size:0.6em;
+}
+
+.Subtitulo{
+    color:#FFAD33;
+    font-size:1em;
+
+}
+.Botones
+{
+    padding:5px;
+    margin:2px;
+    border-radius:5px;
+    color:#fff;
+    background-color:#d82126;
+    font-size:0.5em;
+    border-color:#d82126;
+}
+
+.copyright
+{
+    font: 5px "FrutigerLTStd55Roman",sans-serif;
+    color: #DDD;
+    line-height: 10px;
+    padding-top: 10px;
+    text-align: left;
+    float: left;
+}
+}
+

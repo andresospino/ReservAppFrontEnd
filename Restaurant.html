@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservapp</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" /> 
+    <link href="assets/css/aplication.css"  rel="StyleSheet" type="text/css">
+    <link href="assets/css/blitzer/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+    var map;
+    function initialize() {
+      var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-34.397, 150.644),
+        mapTypeId: google.maps.MapTypeId.SATELITE
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>    
+    <nav id="menu">    
+      <ul>
+        <li><a href="index.html"><img src="assets/img/ReservApp.png" class="Logo"></a></li>
+        <li id="LiRegistro"><span  class="Botones">Registrarse</span></li>
+        <li id="LiLogin"><span  class="Botones">Ingresar</span></li> 
+      </ul>
+    </nav>
+    <header class="HeaderRestaurant">
+      <object data="Restaurants/vtour/tour.html">
+      </object>
+    </header>
+    <section id="Caracteristicas">
+      <ul>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+       <li><img src="x"></li>
+     </ul>
+   </section>
+   <section>
+    <article class="Article3">
+      <div>restauranteDatos del 
+        <div id="map-canvas"></div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      </article>
+      <article  class="Article3">
+        <div><form>
+          
+            <input type="text">   
+        </form></div>
+      </article>
+      <article  class="Article3">
+        <div>
+           <ul>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+       <li><img src="x"><span>mi comentario</span></li>
+     </ul>
+        </div>
+      </article>
+    </section>
+    
+  </body>
+  </html>

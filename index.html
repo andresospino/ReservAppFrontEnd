@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<link href="assets/css/aplication.css"   rel="StyleSheet" type="text/css">
+	<link href="assets/css/blitzer/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+</head>
+<body>
+	<div id='root'>
+		<nav id="menu">    
+			<ul>
+				<li><a href="" ><img src="assets/img/ReservApp.png" class="Logo"></a></li>
+				<li><a href="https://twitter.com/Reservapp_"><img class="ImgRedes" src="assets/img/t.png"></a></li>
+				<li><a href="https://www.facebook.com/reservaap"><img class="ImgRedes" src="assets/img/f.png"></a></li>
+				<li><a id="LiLogin" href="#" class="Links">Ingresar</a></li>
+				<li><a id="LiRegistro" href="#" class="Links">Registrarse</a></li>	
+				
+			</ul>
+		</nav>
+		<section id="Ingreso" class="Ingresar" title="ReservApp">
+			<form id="Login">
+				<input ID="TbCorreo"  name="email"  type="email" PlaceHolder="Correo Electronico" class="TextBox" required="required"  /><br />
+				<input ID="TbContraseña"  type="password" PlaceHolder="Contraseña" class="TextBox"  required="required" /><br />
+				<button type="submit" ID="BtLogin"  Class="Botones" >Ingresar</button><br />
+				<button type="button" ID="btnRecordar"  Class="BotonTransparente" >Olvide mi contraseña</button><br />
+			</form>
+			<form id="Registro">
+				<input ID="TbUsuario" type="text" PlaceHolder="Nombre de Usuario" class="TextBox" required="required" /><br />
+				<input ID="TbMail"  name="email"  type="email" placeholder="Correo Electronico" class="TextBox" required="required" /><br />
+				<input ID="TbPassword" type="password" PlaceHolder="Contraseña" class="TextBox" required="required" /><br />
+				<button type="submit" ID="BtRegistro"  Class="Botones" >Registrarse</button> 
+			</form>
+		</section>
+		<header  id="HeaderHome" class="HeaderHome">
+			<p class="TextoMuyGrande">Busca, elige y <a class="Reservapp">ReservApp<a></p>
+			<span>
+				<input id="Search" class="TextBox" type="text" placeholder="Nombre Restaurante"/>
+				<input id="BtnSearch" class="BotonTransparente ImgRedes" title="Buscar" alt="Buscar" src="assets/img/Search.png" type="image">
+			</span>
+			<select id="SelectCity" class="Botones" >        
+			</select>
+		</header>
+		<section>
+			<article class="Article3">
+				<div class="TitleArticle "><img src="assets/img/Chef.png" class="ImgArticle"></br>Destacados</div>
+				<ul id="DestacadoLista">       
+				</ul>
+			</article>
+			<article  class="Article3">
+				<div class="TitleArticle"><img src="assets/img/populate.png" class="ImgArticle"></br>Populares</div>
+				<ul id="PopularesLista"></ul>
+			</article>
+			<article  class="Article3">
+				<div class="TitleArticle"><img src="assets/img/GPS.png" class="ImgArticle"></br>Cercanos</div>
+				<ul  id="GeoLista"></ul>
+			</article>
+		</section>
+		<footer>  
+			<ul class="copyright">
+				<li>Copyright © 2013 Cristian. All rights reserved.</li>
+				<li><a>Acerca de Nosotros</a></li>
+				<li><a>Contactenos</a> </li>
+				<li><a href="https://twitter.com/Reservapp_"><img class="ImgRedes" src="assets/img/t.png"></a></li>
+				<li><a href="https://www.facebook.com/reservaap"><img class="ImgRedes" src="assets/img/f.png"></a></li>
+			</ul>                
+		</footer>
+	</div>
+	<script src="assets/js/jquery-1.9.1.js"></script>
+	<script src="assets/js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="assets/js/aplication.js"></script>
+</body>
+</html>

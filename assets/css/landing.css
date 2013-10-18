@@ -1,0 +1,176 @@
+body {   	
+
+	background-image: url(http://reservapp.azurewebsites.net/assets/img/reservapp.jpg);  
+
+}
+
+.content-x2{
+	width: 50%;
+	float: left;
+}
+
+.content{
+ padding: 20%
+
+}
+.TextoMuyGrande
+{
+	font-size: 5em;
+	color: #fff;
+	
+}
+
+.TextoMediano
+{
+	font-size: 1.5em;
+	color: #fff;
+	
+}
+
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 7em;
+}
+
+.iphone{
+	width:65%;
+	height: 100%;
+}
+
+
+
+.TextBox{
+	padding:10px;
+	border-radius:5px;
+	border-color:#d82126;
+	width: 40%;
+}
+
+.Botones
+{
+	color:#fff;
+	background-color:#d82126;
+	margin-left: 2%;
+	padding:10px;
+	border-radius:5px;
+	border-color:#d82126;
+	width: 40%;
+}
+
+
+
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* iPhone 5 Landscape */
+@media only screen and (width: px) and (width: 568px) and (orientation: landscape) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* iPhone 5 Portrait */
+@media only screen and (width: px) and (width: 568px) and (orientation: portrait) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+
+/* iPhone 2G-3GS Landscape */
+@media only screen and (width: 481px) and (width: 480px) and (orientation: landscape) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* iPhone 2G-3Gs Portrait */
+@media only screen and (width: 481px) and (width: 480px) and (orientation: portrait) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* iPhone 4/4S Landscape */
+@media only screen and (width: px) and (width: 480px) and (orientation: landscape) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
+
+/* iPhone 4/4S Portrait */
+@media only screen and (width: px) and (width: 480px) and (orientation: portrait) {
+.Reservapp
+{
+	font-family:"Forte";
+	color:#d82126;
+	font-size: 4em;
+}
+.iphone{
+	width:45%;
+	height: 100%;
+}
+}
