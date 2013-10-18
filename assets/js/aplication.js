@@ -261,7 +261,7 @@ var usuario = function(){
       dataType: "xml", 
       data: this.SoapMessage,
       processData: true,
-      contentType: "application/soap+xml; charset=utf-8"
+      contentType: "text/xml; charset=utf-8"
     })
     .done(function(msg) {
       alert( "Data Saved: " + msg );
