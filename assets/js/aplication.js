@@ -263,17 +263,17 @@ var usuario = function(){
       processData: true,
       contentType: "text/xml; charset=utf-8"
     })
-    .done(function(msg) {
-      alert( "Data Saved: " + msg );
+    .done(function(data) {
+      alert( "Su regitro fue exitoso" );
     })
-    .fail(function(){
-      alert("error 500 in th servers")
+    .fail(function(error){
+      alert("Ocurrio un error en el servidor ["+ error+"]" );
     });
   }
 }
 
-var user = new usuario();
-$("#BtRegistro").on('click',user.Register());
+/*var user = new usuario();
+$("#BtRegistro").on('click',user.Register());*/
 
 $(document).ready(function(){
  InsertCity();
