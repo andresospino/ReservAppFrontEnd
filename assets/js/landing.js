@@ -24,15 +24,21 @@ var usuario = function(pEmail){
       contentType: "text/xml; charset=utf-8"
     })
     .done(function(data) {
-      alert( "Su regitro fue exitoso" );
+			$("#messagetrue").dialog({
+			modal: true
+			});  
     })
-    .fail(function(error){
-      alert("Ocurrio un error en el servidor ["+ error+"]" );
+    .fail(function(){
+			$("#messagefalse").dialog({
+			modal: true
+			});  
     });
   }
 }
 
 $(document).ready(function(){
+   $(document.getElementById("messagetrue")).hide();
+   $(document.getElementById("messagefalse")).hide();
    $("#BtRegister").on('click',function(){
     var email = $('#TbCorreo').val();
     if(email != "" && email != null)
