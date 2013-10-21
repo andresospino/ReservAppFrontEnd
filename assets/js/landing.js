@@ -24,6 +24,7 @@ var usuario = function(pEmail){
       contentType: "text/xml; charset=utf-8"
     })
     .done(function(data) {
+      console.log(data);
 			$("#messagetrue").dialog({
 			modal: true
 			});  

@@ -164,7 +164,34 @@ var Restaurant = function(){
  this.FoodType = "";
  this.schedule= "";
 
- this.CreateList= function (pul,pClass, pArray){  
+ this.GetList = function (pul, pClass, pPosition){
+  this.Position = pPosition;
+  var SoapMessage = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'
+  +'<soap:Body>'
+  +'<GetListRestaurant  xmlns="http://reservapp.azurewebsites.net/">'
+  +'<pPosition>'+pPosition+'</pPosition>'
+    +'</GetListRestaurant >'
+  +'</soap:Body>'
++'</soap:Envelope>'
+  
+    $.ajax({
+      url: "http://reservapp.azurewebsites.net/reservapp.asmx?op=GetListRestaurant",
+      type: "POST",
+      dataType: "xml", 
+      data: this.SoapMessage,
+      processData: true,
+      contentType: "text/xml; charset=utf-8"
+    })
+    .done(function(data){
+      var json = JSON.parse(this.responseText)
+      CreateList(pul, pClass, json);
+    })
+    .fail(function(message){
+      alert("Ocurrio un error en el servidor ["+ message+"]" );
+    });
+  }
+
+ var CreateList= function (pul, pClass, pArray){  
    var Restaurant = $('<li></li>');
    $.each(pArray, function(R,r){    
     var RestaurantS = $('<section></section>');
@@ -176,7 +203,7 @@ var Restaurant = function(){
     ImgRestaurant.appendTo(RestaurantA);  
     Description.appendTo(RestaurantA);    
   });  
-Restaurant.appendTo('#'+pul);
+  Restaurant.appendTo('#'+pul);
 }
 
 this.HideImage = function (){
@@ -197,9 +224,9 @@ this.ShowImage = function(){
 }
 
 var Restaurants = new Restaurant();
-Restaurants.CreateList("DestacadoLista","DataRed",jsonDestacado);
-Restaurants.CreateList("PopularesLista","DataOrange",jsonPopular);
-Restaurants.CreateList("GeoLista","DataGreen",jsonGeo);
+Restaurants.GetList("DestacadoLista","DataRed",jsonDestacado);
+Restaurants.GetList("PopularesLista","DataOrange",jsonPopular);
+Restaurants.GetList("GeoLista","DataGreen",jsonGeo);
 Restaurants.HideImage();
 Restaurants.ShowImage();
 
