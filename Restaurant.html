@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" /> 
-    <link href="assets/css/aplication.css"  rel="StyleSheet" type="text/css">
+    <link href="assets/css/restaurant.css"  rel="StyleSheet" type="text/css">
     <link href="assets/css/blitzer/jquery-ui-1.10.3.custom.css" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
@@ -16,7 +16,7 @@
     function initialize() {
       var mapOptions = {
         zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644),
+        center: new google.maps.LatLng(4.596445,-74.083088),
         mapTypeId: google.maps.MapTypeId.SATELITE
       };
       map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -31,8 +31,8 @@
     <nav id="menu">    
       <ul>
         <li><a href="index.html"><img src="assets/img/ReservApp.png" class="Logo"></a></li>
-        <li id="LiRegistro"><span  class="Botones">Registrarse</span></li>
-        <li id="LiLogin"><span  class="Botones">Ingresar</span></li> 
+        <li id="LiRegistro"><span  class="Links">Registrarse</span></li>
+        <li id="LiLogin"><span  class="Links">Ingresar</span></li> 
       </ul>
     </nav>
     <header class="HeaderRestaurant">
@@ -51,37 +51,64 @@
      </ul>
    </section>
    <section>
-    <article class="Article3">
-      <div>restauranteDatos del 
-        <div id="map-canvas"></div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      </article>
-      <article  class="Article3">
-        <div><form>
-          
-            <input type="text">   
-        </form></div>
-      </article>
-      <article  class="Article3">
-        <div>
-           <ul>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-       <li><img src="x"><span>mi comentario</span></li>
-     </ul>
+    <article class="Articlex3">
+      <div>
+        <div id="Nombre" class="TitleArticle"></span>La casa de la recochaaaa</div>
+        <hr></hr>
+        <div id="map-canvas"></div>       
+        <div id="descripcion" class="Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
       </article>
-    </section>
-    
-  </body>
-  </html>
+      <article  class="Articlex3">
+        <div id="Reserva" class="TitleArticle"></span>Reservapp</div>
+        <hr></hr>
+        <div class="forma">
+          <form>
+             <div>
+              <label id="lfecha" for="fecha">Fecha:</label>            
+              <input type="date" name="fecha">
+            </div>
+            <div>
+              <label id="lhora" for="hora">Hora:</label> 
+              <input type="hour" name="hora">
+            </div>
+            <input type="submit" value="reservapp" class="Botones">
+          </form>
+        </div>
+        <div id="Reserva" class="TitleArticle"></span>clasificaci'on</div>
+        <img src="./assets/img/ChefGold.png">
+      </article>
+      <article  class="Articlex3">
+           <div id="Comentarios" class="TitleArticle"></span>Comentarios</div>
+        <hr></hr>
+        <div>
+         <ul>
+           <li class="comentario">
+              <article class="imguser">
+                <img src="./assets/img/Chef.png" />
+              </article>
+              <article class="Coment">
+               <span class="NameUser">Cristian Carvajal</span>
+               <span class="DescriptionComent">Este restaurante olia a picho</span>
+             </article>         
+          </li>          
+         </ul>
+       </div>
+     </article>
+   </section>
+   <footer>  
+    <ul class="copyright">
+      <li>Copyright © 2013 Cristian. All rights reserved.</li>
+      <li><a>Acerca de Nosotros</a></li>
+      <li><a>Contactenos</a> </li>
+      <li><a href="https://twitter.com/Reservapp_"><img class="ImgRedes" src="assets/img/t.png"></a></li>
+      <li><a href="https://www.facebook.com/reservaap"><img class="ImgRedes" src="assets/img/f.png"></a></li>
+    </ul>                
+  </footer>
+</body>
+</html>

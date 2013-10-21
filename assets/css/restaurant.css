@@ -1,0 +1,262 @@
+#root { max-width: 100%; margin: 0; }
+
+body{
+    font-size:16px;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font-family: 'BebasNeueRegular';
+    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+ul, li, menu, p , div {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    -o-margin-before: 0em;
+    -o-margin-after: 0em;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-start: 0px;
+    -ms-margin-before: 0em;
+    -ms-margin-after: 0em;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-start: 0px;
+    -moz-margin-before: 0em;
+    -moz-margin-after: 0em;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-start: 0px;
+}
+
+a
+{
+    text-decoration:none;
+    color:#d82126;
+}
+nav{
+    overflow: hidden;
+    background-color:#3F4944;
+    float: left;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+nav ul{
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0.5em;
+}
+.HeaderRestaurant
+{
+    height:450px;
+    width:100%;
+    padding-top:60px;
+    border-bottom: 3px solid  #d82126;  
+    top:20px;
+}
+object
+{
+  width:100%;
+  height: 100%;
+}
+
+#Caracteristicas{
+    width: 100%;
+    overflow: hidden;
+    background-color:#3F4944;
+
+}
+section ul{
+    display: inline;
+    position: relative;
+    margin: 0 auto;    
+}
+
+section ul li {
+    display: inline;
+    padding: 0.5em;
+
+}
+
+div ul{
+    display: block;
+    position: relative;
+    margin: 0 auto;    
+}
+
+div ul li {
+    display: block;
+    padding: 0.5em;
+
+}
+.Links
+{
+    padding:0.5em;
+    margin:3px; 
+    color:#fff;
+    font-size:1em;
+    border:none;
+}
+.Links:hover
+{
+    color:#d82126;
+}
+
+li .Links, li .ImgRedes{
+    float: right;
+    text-align: center;
+}
+
+.Logo
+{
+    padding: 0px;
+    margin: 0px;
+    height: 60px;     
+    float:left;
+}
+
+.Articlex3
+{
+    width: 32%;
+    float: left;
+    text-align: center;
+    margin-left: 1%;
+    padding-top: 0px;
+
+}
+
+#map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  border: 10px solid #FFF;
+  box-shadow: 5px 5px 5px #DDD;
+}
+
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color:#3F4944;
+}
+footer ul{
+    position: relative;
+    /*width: 968px;
+    height: 60px;*/
+    margin: 0 auto;
+    z-index: 100;
+}
+
+footer ul li {
+    float: left;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+}
+footer ul  li a{
+    color: #DDD;    
+}
+
+.copyright{
+    font: 9px "FrutigerLTStd55Roman",sans-serif;
+    color: #DDD;
+    line-height: 12px;
+    padding-top: 17px;
+    text-align: left;
+}
+
+
+.TitleArticle
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Forte";
+    border:none;
+    color:#d82126;
+    padding: 0px;
+    margin-left: 1em;
+}
+
+.TitleArticle:first-letter{
+    font-size: 3em;
+    text-align: center;
+
+}
+.Description{
+    color: #3F4944;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 1%;
+    line-height: 2;
+}
+.Puntos{
+  color: #DDD;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: red;
+    margin: 3%;
+}
+
+.forma{
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #DDD;
+    overflow: hidden;
+    background-color:#3F4944;
+    color:#DDD;
+    padding: 2%;
+}
+
+.comentario{
+    width: 100%;
+}
+
+.imguser
+{
+    width: 10%;
+    float: left;
+}
+.imguser img
+{
+    width: 100%;
+    float: left;
+
+}
+.Coment{
+     width: 90%;
+     text-align: left;
+}
+
+.NameUser{
+   font-weight:bold;
+   text-align: left;
+    margin-left: 2%;
+}
+
+.DescriptionComent{
+    text-align: left;
+    font-size: 0.8em;
+}
+
+
